@@ -1,2 +1,1 @@
-# my-network
-c3 blockchain network
+# C3 Blockchain!

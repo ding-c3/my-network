@@ -1,0 +1,22 @@
+/**
+ * C3 fish network.
+ */
+namespace org.acme.mynetwork
+
+asset C3Asset identified by name {
+    o String name
+    o Double weight
+    o String type
+    --> C3Organization owner
+}
+
+participant C3Organization identified by name {
+    o String name
+    o String role
+    o Boolean sustainable 
+}
+
+transaction C3Transaction {
+    --> C3Asset c3asset
+    --> C3Organization newOwner
+}

@@ -1,0 +1,38 @@
+C3Organization
+{
+    "$class": "org.acme.mynetwork.C3Organization",
+    "name": "Costco",
+    "role": "supermarket",
+    "sustainable": false
+  }
+
+{
+    "$class": "org.acme.mynetwork.C3Organization",
+    "name": "John",
+    "role": "fisherman",
+    "sustainable": true
+  }
+
+{
+    "$class": "org.acme.mynetwork.C3Organization",
+    "name": "Tom",
+    "role": "supplier",
+    "sustainable": false
+  }
+
+
+C3Asset
+{
+    "$class": "org.acme.mynetwork.C3Asset",
+    "name": "Amy",
+    "weight": 10,
+    "type": "yellow-tuna",
+    "owner": "resource:org.acme.mynetwork.C3Organization#Tom"
+  }
+
+C3Transaction
+{
+ "$class": "org.acme.mynetwork.C3Transaction",
+ "c3asset": "resource:org.acme.mynetwork.C3Asset#Amy",
+ "newOwner": "resource:org.acme.mynetwork.C3Organization#Tom" 
+}

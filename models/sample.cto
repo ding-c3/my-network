@@ -6,14 +6,14 @@ namespace org.acme.mynetwork
 asset C3Asset identified by name {
     o String name
     o Double weight
-    o String type
+    o String category
     --> C3Organization owner
 }
 
 participant C3Organization identified by name {
     o String name
     o String role
-    o Boolean sustainable 
+    o Boolean sustainable
 }
 
 transaction C3Transaction {

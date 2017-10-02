@@ -20,3 +20,16 @@ transaction C3Transaction {
     --> C3Asset c3asset
     --> C3Organization newOwner
 }
+
+asset C3SmartContract identified by name {
+    o String name
+    o Integer expiredOn
+    o String condition
+    o Integer number
+    --> C3Organization oldOwner
+    --> C3Organization newOwner
+}
+
+transaction C3SmartContractTransaction {
+    --> C3SmartContract c3smartContract
+}
